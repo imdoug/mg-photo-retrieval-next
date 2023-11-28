@@ -1,0 +1,106 @@
+
+img.photoshare {
+  width: 70%;
+}
+
+img.bg-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1000px;
+}
+img.bg-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 850px;
+}
+
+img.bg-logo {
+  position: absolute;
+  top: 40px;
+  left: 285px;
+  width: 525px;
+  z-index: 2;
+}
+.last-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 0;
+  top:340px;
+  margin-left: 136px;
+}
+
+.row-container {
+  width: 800px;
+  background: #FFF;
+  height: 272px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p.scan-message {
+    font-size: 45px;
+    width: 800px;
+    background: #FFF;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+img.attendee-photo {
+  width: 170px;
+}
+
+img.qr-code {
+  width: 200px;
+  border: 2px solid;
+  border-radius: 8px;
+}
+
+.id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.phototext{
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; 
+}
+
+.tags{
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+.copyr{
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+a.sharebtn {
+  background: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
