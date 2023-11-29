@@ -12,8 +12,8 @@ export default function Button({currentUser}) {
   };
  
   return (
-    <div>
-      <button onClick={() => saveFile()}>Share</button>
+    <div className="buttonBox">
+      <button className="sharebtn"  onClick={() => saveFile()}>Share</button>
     </div>
   )
 }
