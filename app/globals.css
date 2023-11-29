@@ -17,13 +17,11 @@ img.bg-bottom {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 1000px;
 }
 img.bg-top {
   position: absolute;
   top: 0;
   left: 0;
-  width: 850px;
 }
 
 svg {
@@ -72,10 +70,6 @@ p.scan-message {
     padding: 10px 0px;
 }
 
-img.attendee-photo {
-  width: 170px;
-
-}
 
 /* DYNAMIC PAGE  */
 
