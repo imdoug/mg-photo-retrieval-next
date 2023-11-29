@@ -11,6 +11,7 @@ export default  async function Photo ({ params }) {
           headers: {
             Authorization: `Bearer ${process.env.NEXT_PUBLIC_READ_ONLY_TOKEN}`,
           },
+          cache: 'no-store'
         }
       );
   
@@ -20,12 +21,13 @@ export default  async function Photo ({ params }) {
       }
       let json = await response.json();
       let currentUser = json.data[`${params.id}`]
+      console.log(currentUser.photo.original.url)
 
   return (
     <>
     <div className="id">
         <p className="phototext">Share your photo!</p>
-        <Image className="photoshare" src={currentUser.photo_url} alt='current user photo' width={300} height={370}/>
+        <Image className="photoshare" src={currentUser.photo.original.url} alt='current user photo' width={300} height={370}/>
         <Button currentUser={currentUser}/>
         <p className="tags">@meangirls #meangirlsmusicalmovie # 2024</p>
         <p className="copyr">COPYRIGHT LOREM IPSUM</p>

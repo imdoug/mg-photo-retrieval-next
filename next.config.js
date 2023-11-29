@@ -8,6 +8,12 @@ const nextConfig = {
             port: '',
             pathname: '/photos/**',
           },
+          {
+            protocol: 'https',
+            hostname: 'assets-private.eventfinity.co',
+            port: '',
+            pathname: '/photos/**',
+          },
         ],
       },
 }

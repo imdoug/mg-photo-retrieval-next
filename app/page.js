@@ -26,7 +26,7 @@ export default async function Home( { props }) {
     let json = await response.json();
     //console.log(json.data[0].photo_url)
 
-    let  base_url = "www.google.com";
+    let  base_url = "https://mg-photo-retrieval-next.vercel.app";
   return (
     <main className={styles.main}>
       <div className="page-body">
@@ -41,7 +41,7 @@ export default async function Home( { props }) {
                   alt='user photo'
                   src={json.data[0].photo_url}
                 width={220} height={227}/> 
-                <QRCodeSVG value={`https://mg-photo-retrieval-next.vercel.app/photos/0`} size={162} />
+                <QRCodeSVG value={`${base_url}/photos/0`} size={162} />
               </div>
                <div className="row-container">
                 <Image
@@ -50,7 +50,7 @@ export default async function Home( { props }) {
                   src={json.data[1].photo_url}
                   width={220} height={227}
                 />
-                <QRCodeSVG value={`https://mg-photo-retrieval-next.vercel.app/photos/1`} size={162}  />
+                <QRCodeSVG value={`${base_url}/photos/1`} size={162}  />
               </div>
               <div className="row-container">
                 <Image
@@ -59,7 +59,7 @@ export default async function Home( { props }) {
                   src={json.data[2].photo_url}
                   width={220} height={227}
                 />
-                <QRCodeSVG value={`https://mg-photo-retrieval-next.vercel.app/photos/2`} size={162}  />
+                <QRCodeSVG value={`${base_url}/photos/2`} size={162}  />
               </div>
               <div className="row-container">
                 <Image
@@ -68,7 +68,7 @@ export default async function Home( { props }) {
                   src={json.data[3].photo_url}
                   width={220} height={227}
                 />
-                <QRCodeSVG value={`https://mg-photo-retrieval-next.vercel.app/photos/3`} size={162}  />
+                <QRCodeSVG value={`${base_url}/photos/3`} size={162}  />
               </div> 
             </>
           <p className="scan-message">
