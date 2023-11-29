@@ -103,6 +103,7 @@ img.qr-code {
   font-weight: 400;
   line-height: 36px; 
   font-family: FuturaHv;
+  margin-bottom: 0;
 }
 
 .tags{
@@ -114,6 +115,7 @@ img.qr-code {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.56px;
+  margin-bottom: 0;
 }
 .copyr{
   text-align: center;
