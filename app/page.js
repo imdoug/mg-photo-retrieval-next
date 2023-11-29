@@ -16,6 +16,9 @@ export default async function Home( { props }) {
         headers: {
           Authorization: `Bearer ${process.env.NEXT_PUBLIC_READ_ONLY_TOKEN}`,
         },
+        next: {
+          revalidate: 5
+        },
       }
     );
 

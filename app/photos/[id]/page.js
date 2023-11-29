@@ -11,7 +11,7 @@ export default  async function Photo ({ params }) {
           headers: {
             Authorization: `Bearer ${process.env.NEXT_PUBLIC_READ_ONLY_TOKEN}`,
           },
-          cache: 'no-store'
+          cache: 'no-store',
         }
       );
   
@@ -22,7 +22,6 @@ export default  async function Photo ({ params }) {
       let json = await response.json();
       let currentUser = json.data[`${params.id}`]
       console.log(currentUser.photo.original.url)
-
   return (
     <>
     <div className="id">
