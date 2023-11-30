@@ -33,23 +33,22 @@ svg {
 
 img.bg-logo {
   position: absolute;
-  top: 50px;
-  left: 285px;
-  width: 525px;
+  top:65px;
+  left: 316px;
   z-index: 2;
 }
 .last-container {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  left: 0;
-  top:365px;
-  margin-left: 136px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    left: 0;
+    top: 480px;
+    margin-left: 160px;
 }
 
 .row-container {
-  width: 800px;
+  width: 767px;
   background: #FFF;
   height: 272px;
   border-radius: 16px;
@@ -61,7 +60,7 @@ img.bg-logo {
 p.scan-message {
     font-size: 42px;
     margin-top: 32px;
-    width: 800px;
+    width: 767px;
     background: #FFF;
     border-radius: 16px;
     text-align: center;

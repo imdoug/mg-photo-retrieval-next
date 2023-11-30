@@ -5,7 +5,7 @@ import Client from './components/client';
 
 import doodlebtm from "../public/assets/DOODLES2.png";
 import doodletop from "../public/assets/DOODLES.png";
-import logo from "../public/assets/781_Mean_Girls_LA.png";
+import logo from "../public/assets/burnBook.png";
 
 
 export default async function Home() {
@@ -33,9 +33,9 @@ export default async function Home() {
   return (
     <main className={styles.main}>
         <div className="page-body">
-        <Image className="bg-logo" src={logo} width={525} height={336} alt='logo' />
+        <Image className="bg-logo" src={logo} width={465} height={365} alt='logo' />
         <Image className="bg-top" src={doodletop} width={850} height={711} alt='doodle top' priority />
-        <Image className="bg-bottom" src={doodlebtm} width={900} height={624} alt='doodle bottom'/>
+        <Image className="bg-bottom" src={doodlebtm} width={1100} height={624} alt='doodle bottom'/>
         <Client data={json}/>
         </div>
     </main>
