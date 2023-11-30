@@ -21,7 +21,7 @@ export default  async function Photo ({ params }) {
       }
       let json = await response.json();
       let currentUser = json.data[`${params.id}`]
-      console.log(currentUser.photo.original.url)
+      //console.log(currentUser.photo.original.url)
   return (
     <>
     <div className="id">
