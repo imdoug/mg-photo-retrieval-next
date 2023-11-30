@@ -7,7 +7,6 @@ import Image from 'next/image';
 
 const Client = ({data}) => {
     // const router = useRouter()
-
     const [json,setJson] = useState(false)
     const  base_url = "https://mg-photo-retrieval-next.vercel.app";
 
@@ -31,16 +30,25 @@ const Client = ({data}) => {
         return;
       }
       const j = await response.json();
-      setJson(j.data.slice(0, 4))
-     // console.log('fetched')
+      const pid = localStorage.getItem('pid')
+      revalidateData(j, pid)
       
     }
 
+    const revalidateData = (j,pid) =>{
+      if(j.data[0].id == pid){
+        console.log('data is the same')
+      }else{
+        localStorage.setItem('pid', `${j.data[0].id}`)
+        setJson(j.data.slice(0, 4))
+      }
+    }
+    //console.log(json)
     useEffect(() => {
+        localStorage.setItem('pid', `${data.data[0].id}`)
         setInterval(() => {
           fetchData()
-            // router.refresh()
-        }, 10000);
+        }, 15000);
     }, [])
     
 

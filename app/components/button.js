@@ -12,12 +12,6 @@ export default function Button({currentUser}) {
   const share = () =>{
     navigator.share(shareData)
   }
-  // const saveFile = () => {
-  //   saveAs(
-  //   `${ç}`,
-  //     "MeanGirlsMusical2024.png"
-  //   );
-  // };
  
   return (
     <div className="buttonBox">

@@ -17,40 +17,60 @@ img.bg-bottom {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 101%;
+  height: auto;
 }
+
 img.bg-top {
   position: absolute;
   top: 0;
   left: 0;
+  width: 78%;
+  height: auto;
 }
 
 svg {
   padding: 20px;
   border-radius: 12.27px;
   border: 4.908px solid var(--Mean-Girls-Pink, #FF69B4);
- background: #FFF;
+  background: #FFF;
+  height: 62%;
+  width: 18%;
 }
 
 img.bg-logo {
-  position: absolute;
-  top:65px;
-  left: 316px;
-  z-index: 2;
+    position: absolute;
+    top: 3%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 43%;
+    height: 19vh;
+    z-index: 2;
 }
 .last-container {
     position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 27px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 71vh;
+    gap: 5%;
     left: 0;
-    top: 480px;
-    margin-left: 160px;
+    top: 25%;
+}
+
+img.attendee-photo {
+  height: 85%;
+  width: 20%;
 }
 
 .row-container {
-  width: 767px;
+  width: 70%;
   background: #FFF;
-  height: 272px;
+  height: 100%;
   border-radius: 16px;
   display: flex;
   justify-content: space-around;
@@ -58,15 +78,16 @@ img.bg-logo {
 }
 
 p.scan-message {
-    font-size: 42px;
+    font-size: 2.8vw;
     margin-top: 32px;
-    width: 767px;
+    width: 70%;
     background: #FFF;
     border-radius: 16px;
     text-align: center;
     font-weight: bold;
     font-family: FuturaHv;
     padding: 10px 0px;
+
 }
 
 
@@ -141,3 +162,7 @@ button.sharebtn {
   background-color: transparent;
 }
 
+/* img.attendee-photo {
+  height: 12vh;
+  width: 25%;
+} */
