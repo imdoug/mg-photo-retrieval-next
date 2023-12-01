@@ -45,8 +45,8 @@ img.bg-logo {
     right: 0;
     bottom: 0;
     margin: 0 auto;
-    width: 43%;
-    height: 19vh;
+    width: 460px;
+    height: 365px;
     z-index: 2;
 }
 .last-container {
