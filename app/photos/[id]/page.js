@@ -26,7 +26,7 @@ export default  async function Photo ({ params }) {
     <>
     <div className="id">
         <p className="phototext">Share your photo!</p>
-        <Image className="photoshare" src={currentUser.photo.original.url} alt='current user photo' width={300} height={370}/>
+        <Image className="photoshare" src={currentUser.photo.original.url} alt='current user photo' width={300} height={370} unoptimized={true}/>
         <Button currentUser={currentUser}/>
         <p className="tags">@meangirls #meangirlsmusicalmovie # 2024</p>
         <p className="copyr">COPYRIGHT LOREM IPSUM</p>

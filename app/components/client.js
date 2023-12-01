@@ -61,7 +61,7 @@ const Client = ({data}) => {
                   alt='user photo'
                   src={json ? json[0].photo_url : data.data[0].photo_url}
                   // src={data.data[0].photo_url}
-                width={170} height={227}/> 
+                width={170} height={227} unoptimized={true}/> 
                 <QRCodeSVG value={`${base_url}/photos/0`} size={162} />
               </div>
              <div className="row-container">
@@ -70,7 +70,7 @@ const Client = ({data}) => {
                   alt='user photo 2'
                   src={json ? json[1].photo_url : data.data[1].photo_url}
                   // src={data.data[1].photo_url}
-                  width={170} height={227}
+                  width={170} height={227} unoptimized={true}
                 />
                 <QRCodeSVG value={`${base_url}/photos/1`} size={162}  />
               </div>
@@ -80,7 +80,7 @@ const Client = ({data}) => {
                   alt='user photo 3'
                   src={json ? json[2].photo_url : data.data[2].photo_url}
                   // src={data.data[2].photo_url}
-                  width={170} height={227}
+                  width={170} height={227} unoptimized={true}
                 />
                 <QRCodeSVG value={`${base_url}/photos/2`} size={162}  />
               </div>
@@ -90,7 +90,7 @@ const Client = ({data}) => {
                   alt='user photo 4'
                   src={json ? json[3].photo_url : data.data[3].photo_url}
                   // src={data.data[3].photo_url}
-                  width={170} height={227}
+                  width={170} height={227} unoptimized={true}
                 />
                 <QRCodeSVG value={`${base_url}/photos/3`} size={162}  />
               </div>

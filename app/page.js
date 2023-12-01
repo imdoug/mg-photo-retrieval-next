@@ -33,9 +33,9 @@ export default async function Home() {
   return (
     <main className={styles.main}>
         <div className="page-body">
-        <Image className="bg-logo" src={logo} alt='logo' />
-        <Image className="bg-top" src={doodletop} width={850} height={711} alt='doodle top' priority />
-        <Image className="bg-bottom" src={doodlebtm} width={1100} height={624} alt='doodle bottom'/>
+        <Image className="bg-logo" src={logo} alt='logo' unoptimized={true}/>
+        <Image className="bg-top" src={doodletop} width={850} height={711} alt='doodle top' priority unoptimized={true}/>
+        <Image className="bg-bottom" src={doodlebtm} width={1100} height={624} alt='doodle bottom' unoptimized={true}/>
         <Client data={json}/>
         </div>
     </main>
