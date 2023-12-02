@@ -4,8 +4,8 @@
 export default function Button({currentUser}) {
 
   const shareData = {
-    title: "Mean Girls Musical 2024",
-    text: "This event is so fetch! #meangirlsmusical2024",
+    title: "MeanGirls 2024",
+    text: "That's so Fetch! #MeanGirls",
     url: `${currentUser.photo.original.url}`
 
   }
