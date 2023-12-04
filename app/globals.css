@@ -63,7 +63,7 @@ img.bg-logo {
 }
 
 img.attendee-photo {
-  height: 85%;
+  height: 100%;
   width: 20%;
 }
 
@@ -75,6 +75,7 @@ img.attendee-photo {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 20px;
 }
 
 p.scan-message {
