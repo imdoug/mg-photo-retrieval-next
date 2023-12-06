@@ -19,9 +19,7 @@ const Client = ({data}) => {
           headers: {
             Authorization: `Bearer ${process.env.NEXT_PUBLIC_READ_ONLY_TOKEN}`,
           },
-          next:{
-            revalidate: 5,
-          }
+          cache: "no-store"
         }
       );
   
