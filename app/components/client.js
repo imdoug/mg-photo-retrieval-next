@@ -38,7 +38,7 @@ const Client = ({data}) => {
         console.log('data is the same')
       }else{
         localStorage.setItem('pid', `${j.data[0].id}`)
-        setJson(j.data.slice(0, 4))
+        setJson(j.data.slice(0, 8))
       }
     }
     //console.log(json)
@@ -91,6 +91,46 @@ const Client = ({data}) => {
                   width={170} height={227} unoptimized={true}
                 />
                 <QRCodeSVG value={`${base_url}/photos/3`} size={162}  />
+              </div>
+              <div className="row-container">
+                <Image
+                  className="attendee-photo"
+                  alt='user photo 4'
+                  src={json ? json[4].photo_url : data.data[4].photo_url}
+                  // src={data.data[3].photo_url}
+                  width={170} height={227} unoptimized={true}
+                />
+                <QRCodeSVG value={`${base_url}/photos/4`} size={162}  />
+              </div>
+              <div className="row-container">
+                <Image
+                  className="attendee-photo"
+                  alt='user photo 5'
+                  src={json ? json[5].photo_url : data.data[5].photo_url}
+                  // src={data.data[3].photo_url}
+                  width={170} height={227} unoptimized={true}
+                />
+                <QRCodeSVG value={`${base_url}/photos/5`} size={162}  />
+              </div>
+              <div className="row-container">
+                <Image
+                  className="attendee-photo"
+                  alt='user photo 6'
+                  src={json ? json[6].photo_url : data.data[6].photo_url}
+                  // src={data.data[3].photo_url}
+                  width={170} height={227} unoptimized={true}
+                />
+                <QRCodeSVG value={`${base_url}/photos/6`} size={162}  />
+              </div>
+              <div className="row-container">
+                <Image
+                  className="attendee-photo"
+                  alt='user photo 7'
+                  src={json ? json[7].photo_url : data.data[7].photo_url}
+                  // src={data.data[3].photo_url}
+                  width={170} height={227} unoptimized={true}
+                />
+                <QRCodeSVG value={`${base_url}/photos/7`} size={162}  />
               </div>
           <p className="scan-message">
             SCAN THE QR CODE WITH YOUR DEVICE TO RETRIEVE PHOTO
